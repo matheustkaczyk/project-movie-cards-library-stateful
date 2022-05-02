@@ -57,14 +57,18 @@ class AddMovie extends React.Component {
     } = this.state;
 
     return (
-      <form data-testid="add-movie-form" onSubmit={ (e) => e.preventDefault() }>
+      <form
+        className="filterForm"
+        data-testid="add-movie-form"
+        onSubmit={ (e) => e.preventDefault() }
+      >
         <Title title={ title } handleChange={ this.handleChange } />
         <Subtitle subtitle={ subtitle } handleChange={ this.handleChange } />
         <ImagePath imagePath={ imagePath } handleChange={ this.handleChange } />
         <StoryLine storyLine={ storyLine } handleChange={ this.handleChange } />
         <RatingComponent rating={ rating } handleChange={ this.handleChange } />
         <Genre genre={ genre } handleChange={ this.handleChange } />
-        <Button buttonClick={ this.buttonClick } />
+        <Button className="addMovieBtn" buttonClick={ this.buttonClick } />
       </form>
     );
   }

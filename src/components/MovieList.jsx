@@ -10,7 +10,7 @@ class MovieList extends React.Component {
     return (
       <div data-testid="movie-list" className="movie-list">
         { movies
-          .filter((filteredMovies) => !bookmarkedOnly || filteredMovies.bookmarked)
+          .filter((filteredMovies) => !bookmarkedOnly || filteredMovies.bookmarked)// esta parte da filtragem feita com total ajuda dos meus colegas nuwanda e lucas nahas
           .filter(({ title, subtitle, storyline }) => title.includes(searchText)
           || subtitle.includes(searchText) || storyline.includes(searchText))
           .filter(({ genre }) => genre.includes(selectedGenre))
