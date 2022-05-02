@@ -2,6 +2,8 @@ Projeto desenvolvido durante o curso de desenvolvimento de software na Trybe. O 
 
 Data de entrega: 06/07/2021
 
+# Habilidades
+
   - Ler o estado de um componente e usá-lo para alterar o que exibimos no browser
   - Inicializar um componente, dando a ele um estado pré-definido
   - Atualizar o estado de um componente
